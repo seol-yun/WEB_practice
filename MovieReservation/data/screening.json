@@ -1,0 +1,6 @@
+{"id":"r0","date":"2022-11-11","movie_id":"m0","screening_id":"상영관1","reserve_seat":7}
+{"id":"r1","date":"2022-11-12","movie_id":"m0","screening_id":"상영관3","reserve_seat":10}
+{"id":"r2","date":"2022-11-15","movie_id":"m1","screening_id":"상영관2","reserve_seat":0}
+{"id":"r3","date":"2022-11-17","movie_id":"m1","screening_id":"상영관1","reserve_seat":0}
+{"id":"r4","date":"2022-11-26","movie_id":"m1","screening_id":"상영관3","reserve_seat":5}
+{"id":"r5","date":"2022-11-02","movie_id":"m2","screening_id":"상영관2","reserve_seat":0}

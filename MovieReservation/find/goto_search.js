@@ -1,0 +1,1 @@
+location.href='./search.php';

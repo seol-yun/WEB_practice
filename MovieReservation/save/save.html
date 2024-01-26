@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>영화 저장 페이지</title>
+  <link rel="stylesheet" href="./save.css">
+</head>
+
+<body>
+  <h1>영화 저장 페이지</h1>
+  <form class="saveForm" action="save.php" method="post" enctype="multipart/form-data">
+    <p>
+      <label for="title">영화 제목</label>
+      <input type="text" id="title" name="title" value="">
+    </p>
+    <p>
+    <label for="genre">장르</label>
+     <select id = "genre" class="genre" name="genre">
+      <option value="drama">드라마</option>
+      <option value="action">액션</option>
+      <option value="animation">에니메이션</option>
+      <option value="comedy">코메디</option>
+    </select>
+    </p>
+    <p>
+      <label for="director">감독</label>
+      <input id="director" type="text" name="director" value="">
+    </p>
+    <p>
+      <label for="performer_wrap">출연자</label>
+      <span id="performer_wrap">
+      <input type="text" class = "performer" name="performer[]" value="">
+      </span>
+      <button type="button" name="addperformer_button" id="addperformer_button">출연자 추가</button>
+      <button type="button" name="subperformer_button" id="subperformer_button">출연자 삭제</button>
+    </p>
+    <p>
+      <label for="movie_date">상영 날짜</label>
+      <input type="date" name="movie_date" value="" id="movie_date">
+      <button type="button" name="findtheater_button" id="findtheater_button">상영관 검색</button>
+      <button type="button" name="addtheater_button" id="addtheater_button" disabled>상영 정보 추가</button>
+    </p>
+    <p>
+      <label for="">상영 장소</label>
+      상영관1 <input type="radio" name="radio" id="radio_one" value="상영관1" disabled>
+      상영관2 <input type="radio" name="radio" id="radio_two" value="상영관2" disabled>
+      상영관3 <input type="radio" name="radio" id="radio_three" value="상영관3" disabled>
+    </p>
+    <p>
+      <label for=""></label>
+      <span id="addtheater_wrap">
+      </span>
+    </p>
+    <p>
+      <label for="">포스터 화일</label>
+      <input type="file" name="file_name" value="파일 선택" >
+    </p>
+    <p>
+      <label for=""></label>
+      <button type="submit" name="save_button">저장하기</button>
+    </p>
+  </form>
+
+  <script type="text/javascript" src="./save.js"></script>
+</body>
+
+</html>
